@@ -52,10 +52,14 @@
     <link href='//fonts.googleapis.com/css?family=Inter:400,600' media='all' rel='stylesheet' type='text/css'/>
     <title>HLS Player</title>
 </head>
-<div class='hed'><div class='big'>HLS Player</div><div class='sml'>Play your hls vod &amp; live</div></div></div>
+<div class='hed'>
+    <div class='big'>HLS Player</div>
+    <div class='sml'>Play your hls vod &amp; live</div>
+</div>
+<div class='container'>
 <div style="width:100%;border:1px solid black;border-radius:10px;background-color:white">
     <video class='posterize' controls  playsinline="" autoplay poster>   <source id="vid" src="https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=1" type="application/x-mpegURL"></source></video>
-      <div class='container'>
+      
           <div class="mxs">
       <input id="streamURL" class="w-full" placeholder="Add the video URL to start playing" value="">
       <button class='tmbl' onclick="srv()">Play</button></div></div></div>
