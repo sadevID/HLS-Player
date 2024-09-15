@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="Audio Player" property="og:title"/>
+    <meta content="https://play.ibc.my.id/audio" property="og:url"/>
+    <meta content="Audio Player" property="og:site_name"/>
+    <meta content="website" property="og:type"/>
+    <meta content="Play your Audio vod and live." property="og:description"/>
+    <meta content="Audio Player" property="og:image:alt"/>
+    <meta content="" property="og:image"/>
+    <meta content="Indonesia" name="geo.placename"/>
+    <meta content="IBC" name="Author"/>
+    <meta content="general" name="rating"/>
+    <meta content="general" name="geo.country"/>
+    <meta content="id_ID" property="og:locale"/>
+    <meta content="en_US" property="og:locale:alternate"/>
+    <meta content="en_GB" property="og:locale:alternate"/>
+    <meta content="index, follow" name="robots"/>
+    <meta content="index, follow" name="googlebot"/>
+    <meta content="index, follow" name="googlemediabot"/>
+    <meta content="index, follow" name="slurp"/>
+    <meta content="index, follow" name="Baiduspider"/>
+    <meta content="index, follow" name="AlexaBot"/>
+    <meta content="index, follow" name="Yandex"/>
+    <meta content="index, follow" name="ArchitextSpider"/>
+    <meta content="index, follow" name="msnbot-media/1.0"/>
+    <meta content="index, follow" name="MSNPTC"/>
+    <meta content="index, follow" name="MSNBot"/>
+    <meta content="index, follow" name="bingbot"/>
+    <style>
+        body {font-family:Inter}
+        .hed {text-align:center;margin:10px}
+        .big {font-size: 16px;font-weight: bold}
+        .sml {font-size: 12px}
+        .xsm {font-size: 12px}
+        .fot {text-align:center;margin:10px}
+        .mxs {display: flex;gap: 10px;flex-direction: row;padding: 9px;}
+        .tmbl {color: white;background-color: #52ca86;padding: 10px 30px;border-radius: 12px;font-weight: bold;font-size: 16px;cursor: pointer;text-align: center;border:unset}
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.10.9/player/styles/default/theme.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.10.9/player/styles/default/layouts/audio.min.css"/>
+    <link href='//fonts.googleapis.com/css?family=Inter:400,600' media='all' rel='stylesheet' type='text/css'/>
+    <title>Audio Player</title>
+</head>
+<div class='hed'>
+    <div class='big text-xl font-bold'>Audio Player</div>
+    <div class='sml text-base'>Play your Audio free.</div>
+</div>
+<div class="md:container mx-auto px-7">
+<div class="w-full border rounded-2xl">
+    <media-player id="aud" storage="storage-key" playsinline src="">
+        <media-provider></media-provider>
+        <media-audio-layout thumbnails></media-audio-layout>
+      </media-player>
+      <div class="mxs p-3">
+      <input type="url" id="streamURL" class="py-1 px-3 w-full rounded-lg outline-transparent bg-slate-100 hover:md:animate-pulse" placeholder="Add the audio or music URL to start playing" value="">
+      <button class='tmbl bg-gradient-to-r from-cyan-500 to-blue-500 hover:md:animate-pulse' onclick="srv()">Play</button></div></div>
+      <div class='fot xsm'>Powered by IBC x SADevLabs</div></div>
+
+      <script src="https://cdn.jsdelivr.net/npm/vidstack@1.10.9/cdn/with-layouts/vidstack.min.js" type="module"></script>
+      <script src="https://res.cloudinary.com/ddyjxspka/raw/upload/v1726383009/IBC/HLS%20Player/ply-aud_pxn95t.js"></script>
+      
+<body>
+    
+</body>
+</html>
