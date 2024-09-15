@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" name="viewport"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta content="HLS Player" property="og:title"/>
     <meta content="https://play.ibc.my.id" property="og:url"/>
@@ -33,7 +33,6 @@
     <meta content="index, follow" name="bingbot"/>
     <style>
         body {font-family:Inter}
-        .container {max-width: 1310px;}
         .plyr {--plyr-color-main: #66ec9f;box-shadow: 0px 0px 19px rgba(30,30,30,.1);border-radius: 0;font-family: &#39;Inter&#39;border-radius:10px 10px 0 0}
         .plyr__control--overlaid {border-radius: 20% !important}
         .plyr__controls .plyr__controls__item:first-child {margin-right:0 !important}
@@ -44,31 +43,27 @@
         .xsm {font-size: 12px}
         .fot {text-align:center;margin:10px}
         .mxs {display: flex;gap: 10px;flex-direction: row;padding: 9px;}
-        input {padding: 5px 10px;width: 100%;background: #8080801c;border: unset;border-radius: 9px}
-        input:focus {padding: 5px 10px;width: 100%;border: 1px solid #ced4da;border-radius: 9px;}
         .tmbl {color: white;background-color: #52ca86;padding: 10px 30px;border-radius: 12px;font-weight: bold;font-size: 16px;cursor: pointer;text-align: center;border:unset}
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css' rel='stylesheet'></link>
     <link href='//fonts.googleapis.com/css?family=Inter:400,600' media='all' rel='stylesheet' type='text/css'/>
     <title>HLS Player</title>
 </head>
-<div class='hed'>
-    <div class='big'>HLS Player</div>
-    <div class='sml'>Play your hls vod &amp; live</div>
-</div>
-<div class='container'>
-<div style="width:100%;border:1px solid black;border-radius:10px;background-color:white">
+<div class='hed'><div class='big text-2xl font-bold'>HLS Player</div><div class='sml text-lg'>Play your hls vod &amp; live</div></div></div>
+<div class="md:container mx-auto px-7">
+<div class="w-full border rounded-2xl">
     <video class='posterize' controls  playsinline="" autoplay poster>   <source id="vid" src="https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=1" type="application/x-mpegURL"></source></video>
-      
-          <div class="mxs">
-      <input id="streamURL" class="w-full" placeholder="Add the video URL to start playing" value="">
-      <button class='tmbl' onclick="srv()">Play</button></div></div></div>
-      <div class='fot xsm'>Powered by IBC x SADevLabs</div>
+      <div class="mxs p-3">
+      <input type="url" id="streamURL" class="py-1 px-3 w-full rounded-lg outline-transparent bg-slate-100 hover:md:animate-pulse" placeholder="Add the video URL to start playing" value="">
+      <button class='tmbl bg-gradient-to-r from-cyan-500 to-blue-500 hover:md:animate-pulse' onclick="srv()">Play</button></div></div>
+      <div class='fot xsm'>Powered by IBC x SADevLabs</div></div>
       
       <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
-      <script src="https://res.cloudinary.com/ddyjxspka/raw/upload/v1726363002/IBC/HLS%20Player/hls-ibc_bp0zpt.js
-    "></script>
+      <script src="https://res.cloudinary.com/ddyjxspka/raw/upload/v1726377838/IBC/HLS%20Player/hls-ibc.js"></script>
+      
+   
 <body>
     
 </body>
