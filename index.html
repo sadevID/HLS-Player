@@ -33,6 +33,7 @@
     <meta content="index, follow" name="bingbot"/>
     <style>
         body {font-family:Inter}
+        .container {margin: 50px auto;max-width: 1310px;}
         .plyr {--plyr-color-main: #66ec9f;box-shadow: 0px 0px 19px rgba(30,30,30,.1);border-radius: 0;font-family: &#39;Inter&#39;border-radius:10px 10px 0 0}
         .plyr__control--overlaid {border-radius: 20% !important}
         .plyr__controls .plyr__controls__item:first-child {margin-right:0 !important}
@@ -54,10 +55,11 @@
 <div class='hed'><div class='big'>HLS Player</div><div class='sml'>Play your hls vod &amp; live</div></div></div>
 <div style="width:100%;border:1px solid black;border-radius:10px;background-color:white">
     <video class='posterize' controls  playsinline="" autoplay poster>   <source id="vid" src="https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=1" type="application/x-mpegURL"></source></video>
-      <div class="mxs">
+      <div class='container'>
+          <div class="mxs">
       <input id="streamURL" class="w-full" placeholder="Add the video URL to start playing" value="">
       <button class='tmbl' onclick="srv()">Play</button></div></div>
-      <div class='fot xsm'>Powered by IBC x SADevLabs</div>
+      <div class='fot xsm'>Powered by IBC x SADevLabs</div></div>
       
       <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
