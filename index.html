@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" name="viewport"/>
+
+    <meta content="HLS Player" property="og:title"/>
+    <meta content="https://play.ibc.my.id" property="og:url"/>
+    <meta content="HLS Player" property="og:site_name"/>
+    <meta content="website" property="og:type"/>
+    <meta content="Play your hls vod and live." property="og:description"/>
+    <meta content="HLS Player" property="og:image:alt"/>
+    <meta content="" property="og:image"/>
+    <meta content="Indonesia" name="geo.placename"/>
+    <meta content="IBC" name="Author"/>
+    <meta content="general" name="rating"/>
+    <meta content="general" name="geo.country"/>
+    <meta content="id_ID" property="og:locale"/>
+    <meta content="en_US" property="og:locale:alternate"/>
+    <meta content="en_GB" property="og:locale:alternate"/>
+    <meta content="index, follow" name="robots"/>
+    <meta content="index, follow" name="googlebot"/>
+    <meta content="index, follow" name="googlemediabot"/>
+    <meta content="index, follow" name="slurp"/>
+    <meta content="index, follow" name="Baiduspider"/>
+    <meta content="index, follow" name="AlexaBot"/>
+    <meta content="index, follow" name="Yandex"/>
+    <meta content="index, follow" name="ArchitextSpider"/>
+    <meta content="index, follow" name="msnbot-media/1.0"/>
+    <meta content="index, follow" name="MSNPTC"/>
+    <meta content="index, follow" name="MSNBot"/>
+    <meta content="index, follow" name="bingbot"/>
+    <style>
+        body {font-family:Inter}
+        .plyr {--plyr-color-main: #66ec9f;box-shadow: 0px 0px 19px rgba(30,30,30,.1);border-radius: 0;font-family: &#39;Inter&#39;border-radius:10px 10px 0 0}
+        .plyr__control--overlaid {border-radius: 20% !important}
+        .plyr__controls .plyr__controls__item:first-child {margin-right:0 !important}
+        .plyr__time{margin-right:auto;}
+        .hed {text-align:center;margin:10px}
+        .big {font-size: 16px;font-weight: bold}
+        .sml {font-size: 12px}
+        .xsm {font-size: 12px}
+        .fot {text-align:center;margin:10px}
+        .mxs {display: flex;gap: 10px;flex-direction: row;padding: 9px;}
+        input {padding: 5px 10px;width: 100%;background: #8080801c;border: unset;border-radius: 9px}
+        input:focus {padding: 5px 10px;width: 100%;border: 1px solid #ced4da;border-radius: 9px;}
+        .tmbl {color: white;background-color: #52ca86;padding: 10px 30px;border-radius: 12px;font-weight: bold;font-size: 16px;cursor: pointer;text-align: center;border:unset}
+    </style>
+    <link href='https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css' rel='stylesheet'></link>
+    <link href='//fonts.googleapis.com/css?family=Inter:400,600' media='all' rel='stylesheet' type='text/css'/>
+    <title>HLS Player</title>
+</head>
+<div class='hed'><div class='big'>HLS Player</div><div class='sml'>Play your hls vod &amp; live</div></div></div>
+<div style="width:100%;border:1px solid black;border-radius:10px;background-color:white">
+    <video class='posterize' controls  playsinline="" autoplay poster>   <source id="vid" src="https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=1" type="application/x-mpegURL"></source></video>
+      <div class="mxs">
+      <input id="streamURL" class="w-full" placeholder="Add the video URL to start playing" value="">
+      <button class='tmbl' onclick="srv()">Play</button></div></div>
+      <div class='fot xsm'>Powered by IBC x SADevLabs</div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+      <script src="https://res.cloudinary.com/ddyjxspka/raw/upload/v1726363002/IBC/HLS%20Player/hls-ibc_bp0zpt.js
+    "></script>
+<body>
+    
+</body>
+</html>
